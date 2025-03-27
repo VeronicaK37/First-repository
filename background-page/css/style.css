@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .triangle {
+    width: 300px;
+    height: 150px;
+    background-color: #F7FF62;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: absolute;
+  }
+  
+  #triangle1 {
+    top: 10%;
+    left: 10%;
+  }
+  
+  #triangle2 {
+    top: 45%;
+    left: 40%;
+  }
+  
+  #triangle3 {
+    top: 90%;
+    left: 70%;
+  }
+
+  @media (max-width: 400px){
+    .triangle{
+      flex-direction: column;
+      width:100%;
+      text-align: center;
+      margin: 10px;
+      padding: 8px;
+  } 
+  }

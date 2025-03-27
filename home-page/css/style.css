@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+.container {
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+.top-bar {
+    background-color: #102124;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav .menu li {
+    padding: 10px 20px;
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex-grow: 1; /* 允许main部分占用多余的空间，推动footer到底部 */
+}
+
+#hero {
+    background: url('hero-image.jpg') no-repeat center center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#hero h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.column {
+    width: 45%;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #102124; /* 深色背景 */
+    padding: 10px 50px; /* 上下填充和左右填充 */
+    color: white; /* 文字颜色 */
+}
+
+.footer-section a {
+    color: white; /* 链接颜色 */
+    text-decoration: none; /* 去除下划线 */
+    font-size: 16px; /* 文字大小 */
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+}
+
+.footer-section a:hover, .footer-section a:focus {
+    color: yellow; /* 鼠标悬停或聚焦时的颜色 */
+    background-color: #222; /* 鼠标悬停或聚焦时的背景色 */
+    padding: 10px; /* 鼠标悬停或聚焦时增加内填充 */
+}
+102124
